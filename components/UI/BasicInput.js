@@ -1,10 +1,10 @@
 import { StyleSheet, TextInput } from 'react-native';
 
-function BasicInput({ placeholder, addOn }) {
+function BasicInput({ placeholder, addOn, style }) {
   return (
     <TextInput
       placeholder={placeholder}
-      style={styles.inputContainer}
+      style={[styles.inputContainer, style]}
       {...addOn}
     />
   );

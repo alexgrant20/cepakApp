@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from 'react-native';
 
-function RegularText({ children }) {
-  return <Text style={styles.headingText}>{children}</Text>;
+function RegularText({ children, style }) {
+  return <Text style={[styles.headingText, style]}>{children}</Text>;
 }
 
 export default RegularText;

@@ -1,14 +1,14 @@
 import { StyleSheet, Text } from 'react-native';
 
-function H1({ children, style }) {
+function H4({ children, style }) {
   return <Text style={[styles.headingText, style]}>{children}</Text>;
 }
 
-export default H1;
+export default H4;
 
 const styles = StyleSheet.create({
   headingText: {
-    fontSize: 37,
+    fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
   },

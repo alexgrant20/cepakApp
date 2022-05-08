@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from 'react-native';
 
-function H2({ children }) {
-  return <Text style={styles.headingText}>{children}</Text>;
+function H2({ children, style }) {
+  return <Text style={[styles.headingText, style]}>{children}</Text>;
 }
 
 export default H2;
