@@ -1,11 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Container from '../components/Container';
 import BasicInput from '../components/UI/BasicInput';
 import ButtonPrimary from '../components/UI/ButtonPrimary';
 import H1 from '../components/UI/H1';
 
 function SignUp() {
   return (
-    <View style={styles.rootContainer}>
+    <Container>
       <H1>Sign Up</H1>
       <Text style={styles.infoText}>
         Let's get you <Text style={styles.highlightText}>started</Text>
@@ -25,17 +26,13 @@ function SignUp() {
         Already have an account?{' '}
         <Text style={styles.redirectHiglight}>Sign In</Text>
       </Text>
-    </View>
+    </Container>
   );
 }
 
 export default SignUp;
 
 const styles = StyleSheet.create({
-  rootContainer: {
-    paddingVertical: 50,
-    paddingHorizontal: 20,
-  },
   infoText: {
     fontSize: 28,
     marginBottom: 40,

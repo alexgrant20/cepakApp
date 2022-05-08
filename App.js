@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import AppLoading from 'expo-app-loading';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
+import Dashboard from './screens/Dashboard';
 
 export default function App() {
   if (1 + 1 != 2) {
@@ -16,8 +17,9 @@ export default function App() {
       <StatusBar style="auto" />
       <SafeAreaView style={styles.container}>
         {/* <WelcomeScreen /> */}
-        <SignIn />
+        {/* <SignIn /> */}
         {/* <SignUp /> */}
+        {<Dashboard />}
       </SafeAreaView>
     </>
   );

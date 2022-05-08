@@ -6,13 +6,14 @@ import {
   Button,
   Pressable,
 } from 'react-native';
+import Container from '../components/Container';
 import BasicInput from '../components/UI/BasicInput';
 import ButtonPrimary from '../components/UI/ButtonPrimary';
 import H1 from '../components/UI/H1';
 
 function SignIn() {
   return (
-    <View style={styles.rootContainer}>
+    <Container>
       <H1>Sign In</H1>
       <Text style={styles.welcomeText}>Welcome Back!</Text>
       <View style={styles.inputContainer}>
@@ -29,17 +30,13 @@ function SignIn() {
         Don't have an account ?{' '}
         <Text style={styles.higlightText}>Sign Up </Text>
       </Text>
-    </View>
+    </Container>
   );
 }
 
 export default SignIn;
 
 const styles = StyleSheet.create({
-  rootContainer: {
-    paddingVertical: 50,
-    paddingHorizontal: 20,
-  },
   welcomeText: {
     fontSize: 28,
     marginBottom: 40,
@@ -52,7 +49,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginBottom: 15,
   },
-
   redirectText: {
     fontSize: 16,
     textAlign: 'center',
